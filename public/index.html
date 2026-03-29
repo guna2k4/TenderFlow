@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovTrack AI | God Mode Swarm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <aside class="sidebar">
+        <div class="logo-area">
+            <h2><span class="logo-icon">◈</span> GovTrack AI</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-item active">⊞ Search Hub</a>
+            <a href="#" class="nav-item">📄 My Saved Drafts</a>
+            <a href="#" class="nav-item">⚙️ System Settings</a>
+        </nav>
+        
+        <div class="premium-box">
+            <h4>⭐ Enterprise Pro</h4>
+            <p>God Mode Swarm logic unlocked. 4 parallel state workers active.</p>
+            <button class="btn-upgrade">License Active</button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <h3 class="header-title">
+                Workspace Overview 
+                <span id="mode-badge">NATIONAL SWARM</span>
+            </h3>
+            <div class="status-indicator">
+                <span class="pulse-dot" id="status-dot"></span>
+                <span id="status-text">Agent Standby</span>
+            </div>
+        </header>
+
+        <div class="dashboard-wrapper">
+            <div class="search-console">
+                <div class="input-group">
+                    <label>Target Portal</label>
+                    <select id="targetState">
+                        <option value="TX">Texas SmartBuy</option>
+                        <option value="FL">Florida MarketPlace</option>
+                        <option value="NATIONAL">National Swarm (TX & FL)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group" id="tx-input-group">
+                    <label>TX Class Code</label>
+                    <input type="text" id="txClassCode" placeholder="e.g. 92005" value="92005">
+                </div>
+
+                <div class="input-group hidden" id="fl-input-group">
+                    <label>FL Advertisement Num</label>
+                    <input type="text" id="flCommodityCode" placeholder="e.g. RFP-15301" value="RFP-15301">
+                </div>
+                
+                <div class="input-group date-box">
+                    <label>Start Date</label>
+                    <input type="date" id="startDate" value="2026-03-01">
+                </div>
+                <div class="input-group date-box">
+                    <label>End Date</label>
+                    <input type="date" id="endDate" value="2026-04-30">
+                </div>
+                <button class="btn-run" id="runBtn">
+                    <span id="btnText">✨ Deploy Swarm</span>
+                </button>
+            </div>
+
+            <div id="terminalWrapper" class="terminal-wrapper hidden">
+                <div class="terminal-header" style="background: #1e293b; padding: 10px 20px; font-weight: bold; color: white; border-bottom: 1px solid #334155; font-size: 12px; letter-spacing: 1px;">
+                    SWARM COMMAND TERMINAL
+                </div>
+                <div id="terminal" class="terminal-box"></div>
+            </div>
+
+            <div id="workerCluster" class="worker-cluster-grid hidden"></div>
+
+            <h2 class="section-title hidden" id="resultsTitle" style="margin-top: 20px;">Deep Extraction Intelligence</h2>
+            <div class="grid hidden" id="ai-data-container"></div>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
