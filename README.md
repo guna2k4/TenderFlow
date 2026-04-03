@@ -7,7 +7,6 @@ Follow these simple steps to set up and run the application on your local machin
 Open your terminal and navigate into the extracted project folder:
 ```bash
 cd TENDERFLOW-MAIN
-(If your folder is named differently, use that name instead).
 
 2. Install Dependencies
 Install all the required node_modules (like Express) to make the server work:
@@ -17,7 +16,6 @@ npm install
 3. Setup Environment Variables
 Create a new file in the project folder named exactly .env and paste your API key inside it:
 
-Code snippet
 TINYFISH_API_KEY=your_actual_api_key_here
 PORT=3000
 4. Run the Program
